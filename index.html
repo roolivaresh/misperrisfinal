@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mis Perris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/flexboxgrid.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/validarCampos.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://notoyontoy.000webhostapp.com/demos/slice-box/css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="https://notoyontoy.000webhostapp.com/demos/slice-box/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="https://notoyontoy.000webhostapp.com/demos/slice-box/css/custom.css" />
+    <script type="text/javascript" src="https://notoyontoy.000webhostapp.com/demos/slice-box/js/modernizr.custom.46884.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://notoyontoy.000webhostapp.com/demos/slice-box/js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var Page = (function () {
+                var $navArrows = $('#nav-arrows').hide(),
+                    $shadow = $('#shadow').hide(),
+                    slicebox = $('#sb-slider').slicebox({
+                        onReady: function () {
+                            $navArrows.show();
+                            $shadow.show();
+                        },
+                        orientation: 'r',
+                        cuboidsRandom: true,
+                        autoplay: true
+                    }),
+                    init = function () {
+                        initEvents();
+                    },
+                    initEvents = function () {
+                        // add navigation events
+                        $navArrows.children(':first').on('click', function () {
+                            slicebox.next();
+                            return false;
+                        });
+                        $navArrows.children(':last').on('click', function () {
+                            slicebox.previous();
+                            return false;
+                        });
+                    };
+                return { init: init };
+            })();
+            Page.init();
+        });
+    </script>
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="main.js"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="conteiner-fluid ">
+
+        <header id="header" class="row ">
+            <section class="col-xs-12 col-md-6">
+                <div class="col-xs-12 ">
+                    <img id="imagen1" src="img/logo.png" alt="imagen no encontrada!">
+                </div>
+            </section>
+
+            <section class="col-xs-12 col-md-6">
+                <ul class="row menu col-xs-12 col-md-12" id="tabla">
+
+                    <li>
+                        <a class="colorb col-xs-12 col-md-3" href="" style="text-decoration:none; margin:5px;">inicio
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="colorb col-xs-12 col-md-3" href="#somos" style="text-decoration:none; margin:5px;">quienes
+                            somos </a>
+                    </li>
+
+
+
+                    <li>
+                        <a class="colorb col-xs-12 col-md-3" href="" style="text-decoration:none; margin:5px;">servicios
+                        </a>
+                    </li>
+
+
+
+                    <li>
+                        <a class="colorb col-xs-12 col-md-3" href="#formulario" style="text-decoration:none; margin:5px;">contactanos
+                        </a>
+                    </li>
+
+
+                </ul>
+            </section>
+
+        </header>
+
+
+        <aside id="aside" class=" row">
+
+            <div>
+                <div>
+                    <div class="wrapper">
+
+                        <ul id="sb-slider" class="sb-slider">
+                            <li>
+                                <a href="#" target="_blank"><img src="img/Apolo.jpg" alt="imagen no encontrada" /></a>
+                                <div class="sb-description">
+                                    <h3>Apolo disfruta subirse al auto con su dueño. </h3>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/Duque.jpg" alt="imagen no encontrada" /></a>
+                                <div class="sb-description">
+                                    <h3>Duque siempre acompaña a su dueña.</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="img/Tom.jpg" alt="imagen no encontrada" /></a>
+                                <div class="sb-description">
+                                    <h3>El pequeño Tom siempre esta al lado de su dueña. </h3>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <div id="shadow" class="shadow"></div>
+
+                        <div id="nav-arrows" class="nav-arrows">
+                            <a href="#">Next</a>
+                            <a href="#">Previous</a>
+                        </div>
+
+                    </div><!-- /wrapper -->
+                </div>
+
+                <div class="col-xs-12" id="redes">
+                    <a class="quitardetalle" href="https://www.facebook.com/" target="_blank"><span class="icon-facebook confiIcon ">&nbsp;
+                            &nbsp;
+                        </span></a>
+                    <a class="quitardetalle" href="https://plus.google.com/discover?hl=es" target="_blank"><span class="icon-google-plus confiIcon">&nbsp;
+                            &nbsp;
+                        </span></a>
+                    <a class="quitardetalle" href="https://www.instagram.com/?hl=es-la" target="_blank"><span class="icon-instagram confiIcon">&nbsp;
+                            &nbsp;
+                        </span></a>
+                    <a class="quitardetalle" href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><span
+                            class="icon-envelope confiIcon">&nbsp;
+                            &nbsp;
+                        </span></a>
+                </div>
+                <div class="col-xs-12" id="numero">
+                    <h4>+56998765431</h4>
+                </div>
+
+                <div class="col-xs-12 " id="Rescate">
+                    <h3>Rescate y Adopción de perros callejeros</h3>
+                </div>
+
+            </div>
+
+
+        </aside>
+
+        <section class="row ">
+
+            <section class="col-md-6 section1">
+                <article class="col-xs-12 encabezado1">
+                    <h1 class="centrado">
+                        <B>RESCATE</B>
+                    </h1>
+                    <h5 class="centrado" style="color: #808080"> ETAPA UNO</h5>
+                    <br>
+
+                    <h2 style="color:#808080">______</h2>
+                </article>
+
+            
+                <article class="col-xs-12 parrafo1" style="color:#808080">
+                   <p>
+                        <br>Rescatamos perros en situacion de peligro y/o abandono. Lo rehabilitamos y los <br>
+                        preparamos para buscarle un hogar.
+                    </p>
+               
+                </article>
+            
+
+                <div class="col-xs-12">
+                    <img id="rescate2" src="img/rescate.jpg" alt="imagen no encontrada">
+                </div>
+
+            </section>
+
+
+            <section class="col-md-6 ">
+
+                <div class="col-xs-12">
+                    <img id="crowfunding" src="img/crowfunding.jpg" alt="imagen no encontrada">
+                </div>
+
+                <article class="col-xs-12 encabezado2">
+                    <h2 class="centrado" >
+                        <B>CROWDFUNDING</B>
+                    </h2>
+                    <h4 class="centrado" style="color:#808080">FINANCIAMIENTO</h4>
+                    <br>
+                    <h2 style="color:#808080">______</h2>
+                </article>
+
+
+                <article class="col-xs-12 " style="color:#808080">
+
+                    <p>
+                        <br> Sigue nuestras redes sociales para informarte acerca de las diversas campañas y <br>
+                        actividades
+                        que realizamos para obtener financiamiento para seguir ayudando.
+
+                    </p>
+                </article>
+                <button id="boton">
+                    CAMPAÑAS
+                </button>
+
+            </section>
+            <a name="somos"></a>
+            <div class=galery>
+
+                <ul class="galeria">
+                    <li> <a href="#img1"><img src="img/Bigotes.jpg" alt="imagen no encontrada"></a></li>
+                    <li> <a href="#img2"><img src="img/Chocolate.jpg" alt="imagen no encontrada"></a></li>
+                    <li> <a href="#img3"><img src="img/Luna.jpg" alt="imagen no encontrada"></a></li>
+                    <li> <a href="#img4"><img src="img/Maya.jpg" alt="imagen no encontrada"></a></li>
+                    <li> <a href="#img5"><img src="img/Oso.jpg" alt="imagen no encontrada"></a></li>
+                    <li> <a href="#img6"><img src="img/Pexel.jpg" alt="imagen no encontrada"></a></li>
+                    <li> <a href="#img7"><img src="img/Wifi.jpg" alt="imagen no encontrada"></a></li>
+                </ul>
+            </div>
+            <!-- Imagen 1 -->
+            <div class="modal" id="img1">
+                <h3>Bigotes</h3>
+
+                <div class="imagen">
+                    <a href="#img7">&#60;</a>
+                    <a href="#img2"><img src="img/Bigotes.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img2">></a>
+                </div>
+                <h1>Un pequeño con muchas ganas de jugar.</h1>
+                <a class="cerrar" href="">X</a>
+
+            </div>
+            <!-- Imagen 2 -->
+            <div class="modal" id="img2">
+                <h3>Chocolate</h3>
+
+                <div class="imagen">
+                    <a href="#img1">&#60;</a>
+                    <a href="#img3"><img src="img/Chocolate.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img3">></a>
+                </div>
+                <h1>Un perro con mucha energia y cariño para entregar.</h1>
+                <a class="cerrar" href="">X</a>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="modal" id="img3">
+                <h3>Luna</h3>
+
+                <div class="imagen">
+                    <a href="#img2">&#60;</a>
+                    <a href="#img4"><img src="img/Luna.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img4">></a>
+                </div>
+                <h1>Una pequeña que espera recibir mucho cariño.</h1>
+                <a class="cerrar" href="">X</a>
+            </div>
+            <!-- Imagen 4 -->
+            <div class="modal" id="img4">
+                <h3>Maya</h3>
+
+                <div class="imagen">
+                    <a href="#img3">&#60;</a>
+                    <a href="#img5"><img src="img/Maya.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img5">></a>
+                </div>
+                <h1>Una perrita de 3 meses muy cariñosa y juguetóna. </h1>
+                <a class="cerrar" href="">X</a>
+            </div>
+            <!-- Imagen 5 -->
+            <div class="modal" id="img5">
+                <h3>Oso</h3>
+
+                <div class="imagen">
+                    <a href="#img4">&#60;</a>
+                    <a href="#img6"><img src="img/Oso.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img6">></a>
+                </div>
+                <h1>Es un perro muy inteligente y ágil, travieso, de gran energía.
+                </h1>
+                <a class="cerrar" href="">X</a>
+
+            </div>
+            <!-- Imagen 6 -->
+            <div class="modal" id="img6">
+                <h3>Pexel</h3>
+
+                <div class="imagen">
+                    <a href="#img5">&#60;</a>
+                    <a href="#img7"><img src="img/Pexel.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img7">></a>
+                </div>
+                <h1>Tiene excelente carácter alegre, juguetón y muy regalón.</h1>
+                <a class="cerrar" href="">X</a>
+            </div>
+            <!-- Imagen 7 -->
+            <div class="modal" id="img7">
+                <h3>Wifi</h3>
+                <div class="imagen">
+                    <a href="#img6">&#60;</a>
+                    <a href="#img1"><img src="img/Wifi.jpg" alt="imagen no encontrada"></a>
+                    <a href="#img1">></a>
+                </div>
+                <h1>El es un poco timido pero una vez que que te conozca te sorprendera.</h1>
+                <a class="cerrar" href="">X</a>
+            </div>
+
+
+            <!--Estructura formulario-->
+
+            <section class="sect_form">
+                <div class="row col-xs-12 col-md-12">
+
+                    <div class="col-xs-12" id="contenedor-formulario">
+
+                        <div class="form_top col-xs-12">
+                            <h2>CONTACTOS</h2>
+                        </div>
+
+
+                        <!--w3 validator-->
+                        <!--caso2-->
+                        <form class="form_cont" name="form1" method="post">
+                            <!--onSubmit="javascript:return Rut(document.form1.rut.value);"-->
+                            <label>Nombre </label>
+                            <input type="text" name="Nombre" placeholder="Nombre Completo" id="nombre">
+                            <br>
+                            <label>correo</label>
+                            <input type="text" name="correo" placeholder="correo@hotmail.com" id="correo">
+                            <br>
+                            <label>rut:</label>
+                            <input type="text" required="required" pattern="[0-9]{7,8}-[0-9Kk]{1}" value="" name="rut"
+                                id="rut" placeholder="12345678-5" title="Ej. 18234598-6">
+                            <br>
+                            <label>Fecha Nacimiento</label>
+                            <input type="date" id="fechaNac" name="fechaNac" max="2001-12-31">
+                            <br>
+                            <label>Telefono</label>
+                            <input type="text" placeholder="Ej. 16253548" onkeypress='return validatelefono(event)'
+                                maxlength="8" />
+                            <br>
+                            <div class="datos">
+                                <label>Region</label>
+                                <select id="regiones"></select>
+                                <br>
+                                <br>
+                                <label>Comuna</label>
+                                <select id="comunas"></select>
+
+
+                            </div>
+                            <br>
+                            <label>Seleccione tipo de vivienda</label>
+                            <select name="tipo_vivienda" id="vivienda" size="0" required>
+
+                                <option value="0" selected>Casa con patio grande</option>
+                                <option value="1">Casa con patio pequeño</option>
+                                <option value="2">Casa sin patio</option>
+                                <option value="3">Departamento</option>
+                            </select>
+                            <div class="btn_form">
+                                <input class="btn_submit" type="submit" value="Enviar" id="enviar" />
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <a name="formulario"></a>
+
+
+
+
+        </section>
+
+
+
+        <footer id="footer" class="row col-xs-12 col-md-12">
+
+
+            <p>&nbsp; &nbsp; Desarrollo Web y Mobile</p>
+
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

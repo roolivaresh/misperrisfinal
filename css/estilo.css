@@ -1,0 +1,526 @@
+*{  margin: 0;
+    padding: 0;
+   box-sizing : border-box;
+  }
+  #imagen1{
+    background:#85D4B7;
+    box-sizing:border-box;
+    width:300px;
+    height:70px;
+    padding-top:20px;
+  }
+  #header{background-color: #85D4B7} 
+  #tabla{
+     
+     box-sizing : border-box;
+     background:#85D4B7;
+     color: white;
+     position:none;
+     top:20px;
+     left:500px;
+     text-decoration: "none";
+  
+  }
+  .rescate{
+background: #808080;
+
+
+  }
+  
+    .menu{
+      font-size: 20px;
+      font-style: inherit;
+      color: white;
+      background: #85D4B7;
+      text-align:center;
+      list-style: none;
+      
+    }
+    .colorb{
+      color:white;
+    
+    }
+
+   
+
+
+  div li:hover{
+    background: #9fd5d1;
+  }
+
+  #aside{
+    margin-top: 0px;
+    background-color:#6DCCAA;
+    height: 75vh;
+  }  
+  #imagen2{
+    width: 338px;
+    height: 211px;
+    box-sizing:border-box;
+    margin-left: 0px;
+    margin-top: 0px; 
+  }
+  .centrado{
+  
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+  }
+
+
+  #redes{color:#6DCCAA;
+    font-size: 45px;
+    margin-left: 6px; 
+    margin-top: 0px;
+  text-align: center;
+  }
+  #numero{color: white;
+  margin-right: 0px;
+  margin-top: 12px;
+  font-size: 20px;
+  text-align: center;
+  }
+  #Rescate{color: white;
+    margin-left: 12px;
+    margin-top: -100px;
+    font-size: 14px;  
+    text-align: center;
+  }
+
+
+
+
+  #rescate2{
+    margin: 10px auto;
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+  }
+  
+  #crowfunding{
+    margin: 0px auto;
+    display: block;
+    width: 300px;
+  }
+  
+  .parrafo2{
+    padding-left: 0px;
+    margin: 30px auto;
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .confiIcon{
+    border-radius: 80%;
+    font-size: 14px;
+    background: white center;
+    margin: 9px;
+    padding: 10px 0px; 
+    padding-left: 8px;
+    width:10px;
+    border: solid 0.1em white;
+    color: #85D4B7;
+    
+  }
+
+.quitardetalle{
+  text-decoration:none;
+  color:rgb(2, 2, 2);
+  }
+
+  #boton{
+    transition:all 2s ease;
+    font-size: 10px;
+    font-family: verdana;
+    color: black;
+    background: white;
+    border-color: black;
+    padding: 10px;
+    margin-left: 110px;
+    margin-top: 20px;
+    }
+
+    #footer{background-color:#E6E6E6 ;
+      height: 70px;
+      width: 1500px; 
+      margin-top: 15px;    
+    }
+    .galeria{
+
+      width: 90%;
+      margin:auto;
+      list-style: none;
+      padding: 20px;
+      box-sizing: border-box;
+      
+  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .galeria li{
+  margin: 5px;
+  
+  }
+  .galeria img {
+  
+      width: 150px;
+      height: 100px;
+  }
+  /*Estilos del modal*/
+  
+  .modal{
+  
+  display: none;
+  
+  
+  }
+  
+  
+  .modal:target {
+      display: block;
+      position: fixed;
+      background: rgba(0, 0,0, 0.8);
+      top:0;
+      left: 0;
+      width:100%;
+      height: 100%;
+  }
+  .modal h3 {
+  
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      margin:15px 0;
+  } 
+  
+  
+  
+  
+  .modal h1{
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+  }
+  
+  .imagen{
+  
+      width: 100%;
+      height: 50%;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  
+  .imagen a{
+   color: #fff;
+   font-size: 40px;
+   text-decoration: none;
+   margin: 0 10px;
+  
+  }
+  
+  .imagen a:nth-child(2){
+  
+  margin:0;
+  height: 100%;
+  flex-shrink: 2;
+  }
+  .cerrar {
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
+  
+  
+  }
+  
+  
+  .imagen img {
+  
+  
+       width: 500px;
+       height: 100%;
+       max-width: 100%;
+       border: 7px solid #fff;
+       box-sizing: border-box;
+  }
+  .galery{
+
+    background: #6DCCAA;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+
+  }
+  #contenedor-formulario{
+
+    background: #ffffff;
+    height: auto;
+}
+#contenedor-formulario h1{
+
+    font-family: Open Sans;
+    text-align: center;
+}
+
+
+
+
+
+  @media ( min-width: 1024px) {
+    #tabla{
+     
+      box-sizing : border-box;
+      background:#85D4B7;
+      color: white;
+      position:absolute;
+      top:20px;
+      left:500px;
+      text-decoration: "none";
+   
+   }
+    #imagen2{
+      margin-top: 0px;
+      width:600px;
+      height:300px;
+      box-sizing:border-box;
+      margin-left: 410px;
+    }
+
+    #redes{color:#6DCCAA;
+      font-size: 50px;
+      margin-left: 90vh; 
+      margin-top: -3vh;
+    
+    }
+    #numero{color: white;
+    margin-right: 100vh;
+    margin-top: -3vh;
+    font-size: 20px
+    }
+    #Rescate{color: white;
+      margin-left: -7vh;
+      margin-top: -3vh;  
+      font-size: 20px
+    }
+
+
+    #rescate2{
+      margin: 0px auto;
+      display: block;
+      margin-left: 22vh;
+      margin-top: 25px;
+
+    }
+    
+    #crowfunding{
+      margin: 0px auto;
+      display: block;
+      margin-right: 45vh;
+      margin-top: 20px;
+
+    }
+    .encabezado1{
+      padding-left: 50vh;
+      margin-top: 20px;
+    }
+
+    .parrafo1{
+      padding-left: 13vh;
+      margin-top: 25px;
+    } 
+
+    .encabezado2{
+      margin-right: 52vh;
+      margin-top: 20px;
+    }
+
+    .parrafo2{
+      margin-right: 383px;
+      margin-top: 25px;
+    }
+
+    #boton{
+      transition:all 2s ease;
+      font-size: 10px;
+      font-family: verdana;
+      color: black;
+      background: white;
+      border-color: black;
+      padding: 10px;
+      margin-left: 18px;
+      margin-top: 25px;
+      
+    }
+
+
+    #footer{background-color:#E6E6E6 ;
+      height: 70px;
+      width: 1500px; 
+      margin-top: 15px;    
+    }
+
+    .confiIcon{
+      border-radius: 80%;
+      font-size: 13px;
+      background: white center;
+      margin: 9px;
+      padding: 10px 10px; 
+      padding-left: 9px;
+      width:20px;
+      border: solid  white;
+      color:#85D4B7;
+      
+  
+    }
+
+  .quitardetalle{
+    text-decoration:none;
+    color:rgb(2, 2, 2);
+    }
+
+    .galeria{
+
+      width: 90%;
+      margin:auto;
+      list-style: none;
+      padding: 20px;
+      box-sizing: border-box;
+  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .galeria li{
+  margin: 5px;
+  
+  }
+  .galeria img {
+  
+      width: 150px;
+      height: 100px;
+      
+  }
+  .galery{
+
+    background: #6DCCAA;
+    width: 100%;
+    height: 100%;
+
+
+
+  }
+  /*Estilos del modal*/
+  
+  .modal{
+  
+  display: none;
+  
+  
+  }
+  
+  
+  .modal:target {
+      display: block;
+      position: fixed;
+      background: rgba(0, 0,0, 0.8);
+      top:0;
+      left: 0;
+      width:100%;
+      height: 100%;
+  }
+  .modal h3 {
+  
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      margin:15px 0;
+  } 
+  
+  
+  
+  
+  .modal h1{
+      color: #fff;
+      font-size: 20px;
+  
+      text-align: center;
+
+  }
+  
+  .imagen{
+  
+      width: 100%;
+      height: 50%;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  
+  .imagen a{
+   color: #fff;
+   font-size: 40px;
+   text-decoration: none;
+   margin: 0 10px;
+  
+  }
+  
+  .imagen a:nth-child(2){
+  
+  margin:0;
+  height: 100%;
+  flex-shrink: 2;
+  }
+  .cerrar {
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
+  
+  
+  }
+  
+  
+  .imagen img {
+  
+  
+       width: 500px;
+       height: 100%;
+       max-width: 100%;
+       border: 7px solid #fff;
+       box-sizing: border-box;
+  }
+  #contenedor-formulario{
+
+    background: #ffffff;
+    height: auto;
+}
+#contenedor-formulario h1{
+
+    font-family: Open Sans;
+    text-align: center;
+}
+ 
+
+}
